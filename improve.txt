@@ -1,0 +1,37 @@
+1MOTIVATION:	
+	Experiment setting:寫這個和我們使用的
+		Pictures
+			Train	Test
+		True	78	52
+		Fake	78	52
+	Need motivation? Yes檔案合到motivation
+2.Accuracy:
+	Accuracy of test picture of the net and of the real-time.記錄下來test的accuracy(數字和圖)，(必)還有真正實測下來的精準度，全部放上來
+	ioU
+	        Accuracy      IoU      MeanBFScore
+            ________    _______    ___________
+
+    back    0.98765     0.90432      0.71075  
+    bad     0.39541     0.36578      0.28091  iou的圖表，還有格子圖
+
+3.Time:	App respond time.(必)我們當天測試的時間	(必可以一人一台電腦去做)
+4.Other functions:
+	Future work.
+		Not Excel which can change it become more formore certification.
+		real_time upload to thingspeak檢查
+5.Video: Angle: new video with segment看狀況錄
+6.Segmantation:
+	Follow the ppt.
+	1.label classify the back and true and fake signature while training. 
+	2.label classify the ture or fake signature as the result.
+	3.use seg to train net
+	influence:
+		1.purposed必
+		2.code #with explaning word
+		3.result
+		4.video#with explaning word
+		
+7.Not neccesery to renew the file on ilearn2.0.
+
+
+		
