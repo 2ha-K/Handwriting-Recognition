@@ -5,7 +5,7 @@ It supports multiple input sources (webcam, file selection, mobile capture) and 
 
 ---
 
-## 📌 Key Features
+## Key Features
 - **Multiple Input Sources**
   - Webcam: Capture live image
   - File Selection: Choose an existing image
@@ -27,7 +27,7 @@ It supports multiple input sources (webcam, file selection, mobile capture) and 
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 ```
 
 ProjectSignature/
@@ -47,7 +47,7 @@ ProjectSignature/
 
 ---
 
-## ⚙️ Requirements
+## Requirements
 - MATLAB (GPU support recommended for training)
 - Deep Learning Toolbox
 - Image Processing Toolbox
@@ -58,29 +58,29 @@ ProjectSignature/
 
 ## 🚀 Usage
 
-### 1️⃣ Prepare the Models
+### 1. Prepare the Models
 Make sure you have trained and **saved**:
 - Classification model → `Net/myNetXXXXX.mat`
 - Segmentation model → `segnet/myNetXXXXX.mat`
 
-> 💡 Models are trained in MATLAB and saved manually using:
+> Models are trained in MATLAB and saved manually using:
 > ```matlab
 > save('Net/myNetXXXXX.mat', 'myNet', '-v7.3');
 > save('segnet/myNetXXXXX.mat', 'myNet2', '-v7.3');
 > ```
 
-### 2️⃣ Choose Input Method
+### 2. Choose Input Method
 - **Webcam** → `D0965676_5.m`
 - **File Selection** → `D0965676_4.m`
 - **Mobile/IoT** → `camera_classify_thingspeak.m`
 
-### 3️⃣ Run in MATLAB
+### 3. Run in MATLAB
 Example:
 ```matlab
 run('D0965676_5.m')
 ````
 
-### 4️⃣ Process Flow
+### 4. Process Flow
 
 1. Capture or load the image
 2. Resize to `[400, 400]`
@@ -92,7 +92,7 @@ run('D0965676_5.m')
 
 ---
 
-## 📡 IoT Integration
+## IoT Integration
 
 ThingSpeak is used to report recognition results:
 
@@ -101,7 +101,7 @@ ThingSpeak is used to report recognition results:
 
 ---
 
-## 🔮 Future Improvements
+## Future Improvements
 
 * Improve classification accuracy with a larger, more diverse dataset
 * Enhance segmentation precision
@@ -110,7 +110,7 @@ ThingSpeak is used to report recognition results:
 
 ---
 
-## 📝 Notes
+## Notes
 
 * This project assumes you **already have trained `.mat` models** saved locally.
 * If you need to retrain:
@@ -124,9 +124,3 @@ ThingSpeak is used to report recognition results:
 
 **Author:** \[PO-YI, LIN]
 **Project:** Handwriting-Recognition
-
-
-而且清楚提到模型是訓練完先存起來，使用時從 MATLAB 本地載入，而不是每次重訓。  
-
-如果你願意，我可以幫你在這個 `README.md` 裡加一段**「快速開始」**章節，教使用者 3 步完成辨識，你要我加嗎？
-```
